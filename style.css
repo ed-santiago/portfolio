@@ -110,7 +110,8 @@ nav button {
 }
 
 #intro {
-  width: 75%;
+  width: 35%;
+  text-align: justify;
 }
 
 #tech_stack {
@@ -123,13 +124,14 @@ nav button {
 
 #photo_of_me {
   display: flex;
+  width: 40%;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 #photo_of_me img {
-  width: 100%;
+  width: 60%;
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 640px) {
