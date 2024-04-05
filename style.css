@@ -102,6 +102,14 @@ nav button {
   text-align: center;
 }
 
+#intro_container {
+  display: flex;
+}
+
+#tech_stack {
+  display: flex;
+}
+
 @media screen and (max-width: 640px) {
 
   /* HEADER NAVBAR */
