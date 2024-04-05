@@ -8,7 +8,7 @@
 
 :root {
   --NAVYBLUE: #363C86;
-  --LIGHTBLUE: #26F7FD;
+  --LIGHTBLUE: #99ffff;
   --WHITE: white;
 }
 
@@ -107,24 +107,57 @@ nav button {
 #home article {
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 #intro {
-  width: 35%;
+  width: 30%;
   text-align: justify;
+}
+
+#intro > * {
+  padding: 2% 0;
+}
+
+#intro_buttons button {
+  font-size: 1rem;
+  border-radius: 8px;
+  border-style: none;
+  padding: 2%;
+  background-color: var(--WHITE);
+  font-family: inherit;
+}
+
+#tech_stack_p {
+  margin-top: 8%;
 }
 
 #tech_stack {
   display: flex;
+  gap: 5%;
+}
+
+#tech_stack figure {
+  padding: 2px 10px;
+  background-color: var(--WHITE);
+  color: var(--NAVYBLUE);
+  border-radius: 8px;
 }
 
 #tech_stack figure img {
-  width: 60px;
+  margin: auto;
+  width: 40px;
+}
+
+#tech_stack figure figcaption {
+  font-size: 0.8rem;
+  font-family: inherit;
+  text-align: center;
 }
 
 #photo_of_me {
   display: flex;
-  width: 40%;
+  width: 35%;
   justify-content: center;
   align-items: center;
 }
