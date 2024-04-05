@@ -102,12 +102,36 @@ nav button {
   text-align: center;
 }
 
+#home article {
+  display: flex;
+  justify-content: center;
+}
+
 #intro_container {
   display: flex;
+  width: 50%;
+}
+
+#intro {
+  width: 75%;
 }
 
 #tech_stack {
   display: flex;
+}
+
+#tech_stack figure img {
+  width: 60px;
+}
+
+#photo_of_me {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#photo_of_me img {
+  width: 100%;
 }
 
 @media screen and (max-width: 640px) {
