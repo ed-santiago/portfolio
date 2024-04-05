@@ -52,6 +52,15 @@ ul li a {
   transition: 0.5s;
 }
 
+ul li a:hover {
+  background-color: var(--BLACK);
+  color: var(--WHITE);
+}
+
+ul li a:active {
+  background-color: black;
+}
+
 nav button {
   display: none;
   border: none;
