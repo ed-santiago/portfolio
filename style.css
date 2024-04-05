@@ -66,3 +66,28 @@ nav button {
   border: none;
   background-color: var(--WHITE);
 }
+
+@media screen and (max-width: 640px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li {
+    width: 50%;
+    margin: auto;
+    padding: 1.2rem;
+    border-bottom: 1px solid var(--BLACK);
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  nav button {
+    display: block;
+    font-size: 1.2rem;
+  }
+}
