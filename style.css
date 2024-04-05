@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --BLACK: black;
+  --WHITE: white;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1rem;
