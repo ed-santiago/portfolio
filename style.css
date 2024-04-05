@@ -5,7 +5,8 @@
 }
 
 :root {
-  --BLACK: black;
+  --NAVYBLUE: #1c1c84;
+  --LIGHTBLUE: #26F7FD;
   --WHITE: white;
 }
 
@@ -30,7 +31,7 @@ nav {
   flex-wrap: wrap;
   margin-top: 1rem;
   padding: 0.6rem 1.5rem;
-  border: 2px solid var(--BLACK);
+  border: 2px solid var(--NAVYBLUE);
   border-radius: 25px;
   background-color: var(--WHITE);
 }
@@ -46,19 +47,19 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: var(--BLACK);
+  color: var(--NAVYBLUE);
   padding: 0.5rem 1rem;
   border-radius: 25px;
   transition: 0.5s;
 }
 
 ul li a:hover {
-  background-color: var(--BLACK);
+  background-color: var(--NAVYBLUE);
   color: var(--WHITE);
 }
 
 ul li a:active {
-  background-color: black;
+  background-color: var(--NAVYBLUE);
 }
 
 nav button {
@@ -89,7 +90,7 @@ nav button {
     width: 50%;
     margin: auto;
     padding: 1.2rem;
-    border-bottom: 1px solid var(--BLACK);
+    border-bottom: 1px solid var(--NAVYBLUE);
   }
 
   nav ul li a {
