@@ -109,11 +109,6 @@ nav button {
   justify-content: center;
 }
 
-#intro_container {
-  display: flex;
-  width: 50%;
-}
-
 #intro {
   width: 75%;
 }
@@ -128,6 +123,7 @@ nav button {
 
 #photo_of_me {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
