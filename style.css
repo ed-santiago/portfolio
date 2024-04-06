@@ -140,7 +140,7 @@ nav button {
 }
 
 #tech_stack figure img {
-  width: 60px;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,17 +156,17 @@ nav button {
 
 #photo_of_me {
   display: flex;
-  width: 35%;
+  width: 30%;
   justify-content: center;
   align-items: center;
 }
 
 #photo_of_me img {
-  width: 60%;
+  width: 80%;
   border-radius: 25px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
 
   /* HEADER NAVBAR */
 
