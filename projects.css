@@ -12,6 +12,25 @@
   border-bottom: 4px solid var(--LIGHTBLUE);
 }
 
-@media screen and (max-width) {
-  
+#project1 {
+  display: flex;
+}
+
+#projects article {
+  width: 45%;
+  text-align: justify;
+}
+
+#projects article h3 {
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 640px) {
+  #projects {
+    padding: 8% 10%;
+  }
+
+  #projects h2 {
+    width: 100%;
+  }
 }

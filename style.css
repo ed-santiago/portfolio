@@ -136,14 +136,18 @@ nav button {
 
 #tech_stack {
   display: flex;
+  justify-content: center;
   gap: 5%;
+}
+
+#tech_stack figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #tech_stack figure img {
   width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10%;
   border-radius: 50%;
   background-color: var(--WHITE);
@@ -166,7 +170,7 @@ nav button {
   border-radius: 25px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 640px) {
 
   /* HEADER NAVBAR */
 
