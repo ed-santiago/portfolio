@@ -58,4 +58,17 @@
   #projects h2 {
     width: 100%;
   }
+
+  #project1, #project2, #project3 {
+    flex-direction: column;
+  }
+
+  #projects article {
+    width: 100%;
+  }
+
+  #projects figure {
+    width: 100%;
+    margin: 5% 0;
+  }
 }

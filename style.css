@@ -88,26 +88,26 @@ nav button {
   color: var(--WHITE);
 }
 
-#home > * {
-  padding-bottom: 2%;
-}
-
 #home h1 {
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
+  padding-bottom: 1%;
 }
 
 #home h2 {
   font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 #intro_container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
+  gap: 5%;
 }
 
 #intro {
@@ -136,8 +136,7 @@ nav button {
 
 #tech_stack {
   display: flex;
-  justify-content: center;
-  gap: 5%;
+  gap: 3%;
 }
 
 #tech_stack figure {
@@ -147,26 +146,27 @@ nav button {
 }
 
 #tech_stack figure img {
-  width: 80%;
+  width: 70%;
   padding: 10%;
   border-radius: 50%;
   background-color: var(--WHITE);
 }
 
 #tech_stack figure figcaption {
-  margin-top: 20%;
+  font-size: 0.8rem;
+  margin-top: 10%;
   text-align: center;
 }
 
 #photo_of_me {
   display: flex;
-  width: 30%;
+  width: 20%;
   justify-content: center;
   align-items: center;
 }
 
 #photo_of_me img {
-  width: 80%;
+  width: 100%;
   border-radius: 25px;
 }
 
@@ -223,12 +223,6 @@ nav button {
     flex-direction: column-reverse;
   }
 
-  #photo_of_me {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
   #intro {
     width: 100%;
     text-align: justify;
@@ -241,10 +235,12 @@ nav button {
   }
   
   #tech_stack figure img {
-    width: 40px;
+    width: 50px;
   }
 
-  #tech_stack figure figcaption {
-    font-size: 0.6rem;
+  #photo_of_me {
+    width: 75%;
+    justify-content: center;
+    align-items: center;
   }
 }
