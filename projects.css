@@ -12,23 +12,19 @@
   border-bottom: 4px solid var(--LIGHTBLUE);
 }
 
-#project1 {
+#project1, #project2, #project3 {
   display: flex;
   justify-content: center;
-  gap: 5%;
+  margin: 4% 0;
 }
 
 #projects article {
-  width: 45%;
+  width: 50%;
   text-align: justify;
 }
 
 #projects article > * {
   padding: 2% 0;
-}
-
-#projects article h3 {
-  padding: 2% 0 0 0;
 }
 
 #projects button {
@@ -42,12 +38,16 @@
 }
 
 #projects figure {
-  width: 45%;
-  align-self: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0 1% 0;
 }
 
 #projects figure video {
-  width: 100%;
+  width: 75%;
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 640px) {
