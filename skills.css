@@ -1,0 +1,11 @@
+#skills {
+  padding: 8% 20%;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--NAVYBLUE);
+  width: 50%;
+  border-bottom: 4px solid var(--LIGHTBLUE);
+}
