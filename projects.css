@@ -21,8 +21,22 @@
   text-align: justify;
 }
 
-#projects article h3 {
+#projects article > * {
   padding: 2% 0;
+}
+
+#projects article h3 {
+  padding: 2% 0 0 0;
+}
+
+#projects button {
+  background-color: var(--WHITE);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1%;
+  color: var(--NAVYBLUE);
+  border-radius: 8px;
+  border: 2px solid var(--NAVYBLUE);
 }
 
 @media screen and (max-width: 640px) {
