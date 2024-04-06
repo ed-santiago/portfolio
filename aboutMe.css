@@ -1,0 +1,22 @@
+#about_me {
+  padding: 8% 20%;
+  background-color: #e8f0f7;
+}
+
+#about_me h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--NAVYBLUE);
+  width: 50%;
+  border-bottom: 4px solid var(--LIGHTBLUE);
+}
+
+@media screen and (max-width: 640px) {
+  #about_me {
+    padding: 8% 10%;
+  }
+
+  #about_me h2 {
+    width: 100%;
+  }
+}
