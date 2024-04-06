@@ -27,6 +27,11 @@
   padding: 2% 0;
 }
 
+#projects article h3 {
+  color: var(--NAVYBLUE);
+  font-size: 1.5rem;
+}
+
 #projects button {
   background-color: var(--WHITE);
   font-family: inherit;
@@ -35,6 +40,13 @@
   color: var(--NAVYBLUE);
   border-radius: 8px;
   border: 2px solid var(--NAVYBLUE);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#projects button:hover {
+  background-color: var(--NAVYBLUE);
+  color: var(--WHITE);
 }
 
 #projects figure {
@@ -61,6 +73,7 @@
 
   #project1, #project2, #project3 {
     flex-direction: column;
+    margin-bottom: 8%;
   }
 
   #projects article {
@@ -70,5 +83,9 @@
   #projects figure {
     width: 100%;
     margin: 5% 0;
+  }
+
+  #projects figure video {
+    width: 100%;
   }
 }
