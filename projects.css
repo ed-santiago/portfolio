@@ -14,6 +14,8 @@
 
 #project1 {
   display: flex;
+  justify-content: center;
+  gap: 5%;
 }
 
 #projects article {
@@ -37,6 +39,15 @@
   color: var(--NAVYBLUE);
   border-radius: 8px;
   border: 2px solid var(--NAVYBLUE);
+}
+
+#projects figure {
+  width: 45%;
+  align-self: center;
+}
+
+#projects figure video {
+  width: 100%;
 }
 
 @media screen and (max-width: 640px) {
