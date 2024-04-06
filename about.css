@@ -30,6 +30,9 @@
 }
 
 #about article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
   text-align: justify;
 }
@@ -38,16 +41,19 @@
   margin-top: 5%;
   font-size: 1.4rem;
   color: var(--NAVYBLUE);
+  text-align: center;
 }
 
 #about article button {
+  width: 100%;
+  font-family: inherit;
   margin-top: 2%;
-  margin-right: 2%;
+  margin-right: 1%;
   padding: 2%;
   background-color: var(--WHITE);
   border: 2px solid var(--NAVYBLUE);
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--NAVYBLUE);
   cursor: pointer;
   transition: 0.5s;
