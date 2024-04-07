@@ -1,11 +1,46 @@
-#skills {
+#skills_container {
   padding: 8% 20%;
 }
 
-#skills h2 {
+#skills_container h2 {
   font-size: 2.5rem;
   font-weight: 900;
   color: var(--NAVYBLUE);
   width: 50%;
   border-bottom: 4px solid var(--LIGHTBLUE);
+}
+
+#skills {
+  display: flex;
+  margin: 4% 0;
+  gap: 5%;
+}
+
+#skills figure {
+  width: 50%;
+  background-color: var(--NAVYBLUE);
+}
+
+#skills dl {
+  max-width: 50%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#skills dl > * {
+  margin-bottom: 1rem;
+}
+
+#skills dd {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 640px) {
+  #skills_container {
+    padding: 8% 10%;
+  }
+
+  #skills_container h2 {
+    width: 100%;
+  }
 }
