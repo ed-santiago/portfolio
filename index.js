@@ -17,6 +17,21 @@ hamburgerIcon.addEventListener("click", () => {
 
 //SKILLS SECTION
 
+
+const skillsNodeList = document.querySelectorAll("#skills_container img");
+const skills = Array.from(skillsNodeList);
+skills.forEach(skill => {
+  skill.addEventListener("click", skillClicked)
+})
+
+function skillClicked(e) {
+  e.target.style.backgroundColor = "white";
+
+  const filter = skills.filter(element => element !== e.target);
+  filter.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
+}
+
+
 /* const skillsNodeList = document.querySelectorAll("#skills_container figure");
 const skills = Array.from(skillsNodeList);
 console.log(skills)
