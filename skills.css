@@ -81,4 +81,22 @@
   #skills dl {
     width: 100%;
   }
+
+  #skills_container {
+    grid-template-columns: 30% 30% 30%;
+    margin-bottom: 7.5%;
+  }
+
+  #skills_container img {
+    width: 70px;
+  }
+
+  /* #skills_container figure {
+    max-height: 88px;
+  } */
+
+  #skills_container figcaption {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
 }
