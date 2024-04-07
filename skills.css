@@ -36,8 +36,13 @@
   padding: 10%;
   border-radius: 50%;
   width: 90%;
-  box-shadow: 0 6px 0 var(--NAVYBLUE), 0 6px 10px black;
+  box-shadow: 0 6px 0 var(--NAVYBLUE), 0 4px 10px black;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+#skills_container img:active {
+  box-shadow: 0 2px 0 var(--NAVYBLUE), 0 2px 4px black;
 }
 
 #skills_container figcaption {
@@ -88,7 +93,7 @@
   }
 
   #skills_container img {
-    width: 70px;
+    width: 65px;
   }
 
   /* #skills_container figure {
