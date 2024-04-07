@@ -1,6 +1,6 @@
 #about_container {
   padding: 8% 20%;
-  background-color: #e8f0f7;
+  background-color: var(--LIGHTBLUE);
 }
 
 #about_container h2 {
@@ -8,7 +8,7 @@
   font-weight: 900;
   color: var(--NAVYBLUE);
   width: 50%;
-  border-bottom: 4px solid var(--LIGHTBLUE);
+  border-bottom: 4px solid var(--NAVYBLUE);
 }
 
 #about {

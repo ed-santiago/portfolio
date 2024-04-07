@@ -9,7 +9,7 @@
   font-weight: 900;
   color: var(--NAVYBLUE);
   width: 50%;
-  border-bottom: 4px solid var(--LIGHTBLUE);
+  border-bottom: 4px solid var(--NAVYBLUE);
 }
 
 #project1, #project2, #project3 {
