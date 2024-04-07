@@ -36,7 +36,7 @@
   padding: 10%;
   border-radius: 50%;
   width: 90%;
-  box-shadow: 0 6px 0 var(--NAVYBLUE), 0 4px 10px black;
+  box-shadow: 0 6px 0 var(--NAVYBLUE), 0 4px 8px black;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -45,14 +45,20 @@
   box-shadow: 0 2px 0 var(--NAVYBLUE), 0 2px 4px black;
 }
 
+#javascript img {
+  background-color: var(--WHITE);
+}
+
 #skills_container figcaption {
   margin-top: 12.5%;
   text-align: center;
 }
 
 #skills dl {
+  display: none;
   padding: 2%;
   width: 50%;
+  min-height: 45vh;
   max-height: 45vh;
   overflow-y: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

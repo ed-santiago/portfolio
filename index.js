@@ -16,20 +16,28 @@ hamburgerIcon.addEventListener("click", () => {
 })
 
 //SKILLS SECTION
-
+const descriptionNodeList = document.querySelectorAll("#skills dl");
+descriptionNodeList[2].style.display = "block";
 
 const skillsNodeList = document.querySelectorAll("#skills_container img");
 const skills = Array.from(skillsNodeList);
-skills.forEach(skill => {
-  skill.addEventListener("click", skillClicked)
+skills.forEach((skill, index) => {
+  skill.addEventListener("click", () => {
+    skill.style.backgroundColor = "var(--WHITE)";
+    console.log(index);
+
+    const filter = skills.filter(element => element !== skill);
+    filter.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
+  })
 })
 
-function skillClicked(e) {
-  e.target.style.backgroundColor = "white";
+/* function skillClicked(e) {
+  e.target.style.backgroundColor = "var(--WHITE)";
+  console.log(e.target).index;
 
   const filter = skills.filter(element => element !== e.target);
   filter.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
-}
+} */
 
 
 /* const skillsNodeList = document.querySelectorAll("#skills_container figure");
