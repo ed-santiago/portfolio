@@ -18,6 +18,7 @@ hamburgerIcon.addEventListener("click", () => {
 //SKILLS SECTION
 const descriptionNodeList = document.querySelectorAll("#skills dl");
 descriptionNodeList[2].style.display = "block";
+const descriptions = Array.from(descriptionNodeList);
 
 const skillsNodeList = document.querySelectorAll("#skills_container img");
 const skills = Array.from(skillsNodeList);
@@ -28,6 +29,11 @@ skills.forEach((skill, index) => {
 
     const filter = skills.filter(element => element !== skill);
     filter.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
+
+    const idk = descriptions.find((element, index2) => index === index2);
+    idk.style.display = "block";
+    const idk2  = descriptions.filter(element => element !== idk);
+    idk2.map(element => element.style.display = "none");
   })
 })
 
