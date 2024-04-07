@@ -62,10 +62,29 @@
   max-height: 45vh;
   overflow-y: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: fade-right 0.5s;
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #skills dl > * {
   margin-bottom: 1rem;
+}
+
+#skills dt {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--NAVYBLUE)
 }
 
 #skills dd {

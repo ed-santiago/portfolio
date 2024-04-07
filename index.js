@@ -25,33 +25,13 @@ const skills = Array.from(skillsNodeList);
 skills.forEach((skill, index) => {
   skill.addEventListener("click", () => {
     skill.style.backgroundColor = "var(--WHITE)";
-    console.log(index);
 
-    const filter = skills.filter(element => element !== skill);
-    filter.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
+    const filterSkills = skills.filter(element => element !== skill);
+    filterSkills.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
 
-    const idk = descriptions.find((element, index2) => index === index2);
-    idk.style.display = "block";
-    const idk2  = descriptions.filter(element => element !== idk);
-    idk2.map(element => element.style.display = "none");
+    const findDescription = descriptions.find((element, index2) => index === index2);
+    findDescription.style.display = "block";
+    const filterDescription  = descriptions.filter(element => element !== findDescription);
+    filterDescription.map(element => element.style.display = "none");
   })
 })
-
-/* function skillClicked(e) {
-  e.target.style.backgroundColor = "var(--WHITE)";
-  console.log(e.target).index;
-
-  const filter = skills.filter(element => element !== e.target);
-  filter.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
-} */
-
-
-/* const skillsNodeList = document.querySelectorAll("#skills_container figure");
-const skills = Array.from(skillsNodeList);
-console.log(skills)
-
-const query = window.matchMedia("(max-width: 640px)");
-if (query.matches) {
-  const filterSkills = skills.filter((element, index) => index !== 2);
-  filterSkills.map(skill => skill.style.display = "none")
-} */
