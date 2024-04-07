@@ -12,7 +12,7 @@
 
 #skills {
   display: flex;
-  margin: 4% 0;
+  margin: 6% 0;
   gap: 5%;
 }
 
@@ -41,14 +41,16 @@
 }
 
 #skills_container figcaption {
-  margin-top: 10%;
+  margin-top: 12.5%;
   text-align: center;
 }
 
 #skills dl {
-  max-width: 50%;
+  padding: 2%;
+  width: 50%;
   max-height: 45vh;
   overflow-y: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #skills dl > * {
@@ -60,11 +62,23 @@
 }
 
 @media screen and (max-width: 640px) {
-  #skills_container {
+  #skills_section {
     padding: 8% 10%;
   }
 
-  #skills_container h2 {
+  #skills_section h2 {
+    width: 100%;
+  }
+
+  #skills {
+    flex-direction: column;
+  }
+
+  #skills_container {
+    width: 100%;
+  }
+
+  #skills dl {
     width: 100%;
   }
 }
