@@ -12,17 +12,18 @@
 }
 
 #blogs_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 3%;
   column-gap: 3%;
-  row-gap: 10%;
+  row-gap: 4vh;
 }
 
 .blog_card {
-  background-color: var(--WHITE);
+  width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 3%;
+  padding: 1%;
   background-color: whitesmoke;
 }
 
@@ -35,4 +36,5 @@
 .blog_card figure img {
   width: 100%;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
