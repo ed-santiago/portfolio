@@ -10,3 +10,29 @@
   width: 50%;
   border-bottom: 4px solid var(--NAVYBLUE);
 }
+
+#blogs_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3%;
+  column-gap: 3%;
+  row-gap: 10%;
+}
+
+.blog_card {
+  background-color: var(--WHITE);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3%;
+  background-color: whitesmoke;
+}
+
+.blog_card figcaption {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.blog_card figure img {
+  width: 100%;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+}
