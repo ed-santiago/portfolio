@@ -1,0 +1,12 @@
+#blogs_section {
+  padding: 8% 20%;
+  background-color: var(--LIGHTBLUE);
+}
+
+#blogs_section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--NAVYBLUE);
+  width: 50%;
+  border-bottom: 4px solid var(--NAVYBLUE);
+}

@@ -64,14 +64,6 @@
   color: var(--WHITE);
 }
 
-#resume button {
-  border: 2px solid var(--NAVYBLUE);
-  background-color: var(--WHITE);
-  padding: 2%;
-  color: var(--NAVYBLUE);
-  font-weight: bold;
-}
-
 @media screen and (max-width: 640px) {
   #about_container {
     padding: 8% 10%;
@@ -95,5 +87,9 @@
 
   #about article {
     width: 100%;
+  }
+
+  #about article button {
+    padding: 3% 0;
   }
 }

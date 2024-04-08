@@ -84,8 +84,8 @@ nav button {
 
 #home {
   padding: 8%;
-  background-color: var(--NAVYBLUE);
-  color: var(--WHITE);
+  background-color: var(--LIGHTBLUE);
+  color: var(--NAVYBLUE);
 }
 
 #home h1 {
@@ -99,7 +99,7 @@ nav button {
   font-size: 2.5rem;
   font-weight: 900;
   text-align: center;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
 }
 
 #intro_container {
@@ -121,7 +121,6 @@ nav button {
 
 #intro_buttons {
   font-size: 2rem;
-  color: var(--WHITE);
 }
 
 #intro_buttons > * {
@@ -200,7 +199,7 @@ nav button {
   /* HOME SECTION */
 
   #home {
-    padding: 20% 2%;
+    padding: 20% 10%;
   }
 
   #home > * {
@@ -208,15 +207,17 @@ nav button {
   }
 
   #home h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-align: center;
+    text-wrap: nowrap;
   }
   
   #home h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
+    text-wrap: nowrap;
   }
 
   #intro_container {
@@ -226,7 +227,7 @@ nav button {
   #intro {
     width: 100%;
     text-align: justify;
-    padding: 5%;
+    padding: 5% 0;
   }
 
   #tech_stack figure {
