@@ -48,14 +48,16 @@ function submitForm(e) {
       'Content-Type': 'application/json',
       'Accept': 'application/json'
     },
-    body: JSON.stringify({
-      firstName: `${e.target["firstName"].value}`,
-      lastName: `${e.target["lastName"].value}`,
-      email: `${e.target["email"].value}`,
-      phoneNumber: `${e.target["phone"].value}`,
-    })
+    body: JSON.stringify()
   })
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.log(error));
 }
+
+/* {
+  firstName: `${e.target["firstName"].value}`,
+  lastName: `${e.target["lastName"].value}`,
+  email: `${e.target["email"].value}`,
+  phoneNumber: `${e.target["phone"].value}`,
+} */
