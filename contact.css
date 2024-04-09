@@ -64,5 +64,16 @@ input {
 }
 
 #contact_alternative {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
+}
+
+#contact_alternative a {
+  color: inherit;
+}
+
+#plane {
+  font-size: 12rem;
 }
