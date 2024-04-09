@@ -42,7 +42,7 @@ contactForm.addEventListener("submit", submitForm);
 
 function submitForm(e) {
   e.preventDefault();
-  fetch("https://formsubmit.co/ajax/your@email.com", {
+  fetch("https://formsubmit.co/ajax/b2bc439f2915611803ddb205776969ba", {
     method: "POST",
     headers: {
       'Content-Type': 'application/json',
