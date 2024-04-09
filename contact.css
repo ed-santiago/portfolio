@@ -1,12 +1,37 @@
 #contact_section {
-  padding: 8% 20%;
+  padding: 8% 18%;
   background-color: var(--NAVYBLUE);
   color: var(--WHITE);
 }
 
 #contact_section h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
+  text-align: center;
+}
+
+#form_container {
+  display: flex;
+}
+
+#form_container form {
   width: 50%;
-  border-bottom: 4px solid var(--NAVYBLUE);
+}
+
+input {
+  padding: 5%;
+  width: 90%;
+}
+
+#name {
+  display: flex;
+  justify-content: space-between;
+}
+
+#name div {
+  width: 100%;
+}
+
+#contact_alternative {
+  width: 50%;
 }
