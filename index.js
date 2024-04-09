@@ -49,7 +49,7 @@ function submitForm(e) {
       'Accept': 'application/json'
     },
     body: JSON.stringify({
-      testing: `${e.target["firstName"].value}`,
+      firstName: `${e.target["firstName"].value}`,
       lastName: `${e.target["lastName"].value}`,
       email: `${e.target["email"].value}`,
       phoneNumber: `${e.target["phone"].value}`,
