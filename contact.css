@@ -1,0 +1,12 @@
+#contact_section {
+  padding: 8% 20%;
+  background-color: var(--NAVYBLUE);
+  color: var(--WHITE);
+}
+
+#contact_section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  width: 50%;
+  border-bottom: 4px solid var(--NAVYBLUE);
+}
