@@ -31,7 +31,31 @@ skills.forEach((skill, index) => {
 
     const findDescription = descriptions.find((element, index2) => index === index2);
     findDescription.style.display = "block";
-    const filterDescription  = descriptions.filter(element => element !== findDescription);
+    const filterDescription = descriptions.filter(element => element !== findDescription);
     filterDescription.map(element => element.style.display = "none");
   })
 })
+
+//CONTACT FORM SUBMISSION
+const contactForm = document.querySelector("#form_container form");
+contactForm.addEventListener("submit", submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+  fetch("https://formsubmit.co/ajax/your@email.com", {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+      firstName: `${e.target["firstName"].value}`,
+      lastName: `${e.target["lastName"].value}`,
+      email: `${e.target["email"].value}`,
+      phoneNumber: `${e.target["phone"].value}`,
+    })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+}
