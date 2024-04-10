@@ -39,6 +39,7 @@ skills.forEach((skill, index) => {
 //CONTACT FORM SUBMISSION
 const contactForm = document.querySelector("#form_container form");
 contactForm.addEventListener("submit", submitForm);
+const successMessage = document.querySelector("#alert");
 
 function submitForm(e) {
   e.preventDefault();
@@ -56,9 +57,15 @@ function submitForm(e) {
     })
   })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(() => {
+      successMessage.style.display = "block";
+      contactForm.reset();
+    })
     .catch(error => console.log(error));
 }
+
+const closeSuccessMessage = document.querySelector("#close_button");
+closeSuccessMessage.addEventListener("click", () => successMessage.style.display = "none");
 
 /* {
   firstName: `${e.target["firstName"].value}`,
