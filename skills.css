@@ -70,18 +70,6 @@
   animation: fade-right 0.5s;
 }
 
-@keyframes fade-right {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 #skills_container dl > * {
   margin-bottom: 1rem;
 }

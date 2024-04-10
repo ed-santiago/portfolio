@@ -40,6 +40,7 @@ nav {
   border: 2px solid var(--NAVYBLUE);
   border-radius: 25px;
   background-color: var(--WHITE);
+  animation: fade-down 0.5s;
 }
 
 ul {
@@ -96,12 +97,14 @@ nav button {
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 4%;
+  animation: fade-down 0.5s;
 }
 
 #home_container {
   display: flex;
   justify-content: center;
   gap: 3%;
+  animation: fade-down 0.5s;
 }
 
 #intro_container {
@@ -239,5 +242,31 @@ nav button {
 
   #photo_of_me img {
     width: 100%;
+  }
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
