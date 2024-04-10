@@ -73,6 +73,21 @@ nav button {
   display: none;
   border: none;
   background-color: var(--WHITE);
+  
+}
+
+nav button > * {
+  animation: fade-in 0.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    scale: 0;
+  }
+
+  100% {
+    scale: 1;
+  }
 }
 
 .overlay {
