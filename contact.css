@@ -10,11 +10,8 @@
   text-align: center;
 }
 
-#contact_section h3 {
+h3 {
   font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 2% 4%;
 }
 
 #form_container {
@@ -30,6 +27,10 @@
   flex-direction: column;
   width: 50%;
   border-right: 2px solid white;
+}
+
+#form_container form h3 {
+  margin-bottom: 5%;
 }
 
 input {
@@ -72,6 +73,10 @@ input {
 
 #contact_alternative a {
   color: inherit;
+}
+
+#contact_alternative h3 {
+  text-align: end;
 }
 
 #plane {
