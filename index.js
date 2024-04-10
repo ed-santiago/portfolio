@@ -15,6 +15,16 @@ hamburgerIcon.addEventListener("click", () => {
   }
 })
 
+const navLi = document.querySelectorAll("nav ul li");
+const liArray = Array.from(navLi);
+liArray.forEach(li => {
+  li.addEventListener("click", () => {
+    nav.style.display = "none";
+    overlay.classList.remove("overlay");
+    hamburgerIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+})
+})
+
 //SKILLS SECTION
 const descriptionNodeList = document.querySelectorAll("#skills_container dl");
 descriptionNodeList[2].style.display = "block";

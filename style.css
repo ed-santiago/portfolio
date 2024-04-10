@@ -46,6 +46,7 @@ nav {
 ul {
   display: flex;
   gap: 3rem;
+  animation: fade-down 0.5s;
 }
 
 ul li {
