@@ -92,7 +92,7 @@ form button:hover {
 
 @media screen and (max-width: 640px) {
   #contact_section {
-    padding: 8% 10%;
+    padding: 15% 10% 10%;
   }
 
   #contact_section h2 {
