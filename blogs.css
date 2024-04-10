@@ -25,6 +25,11 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1%;
   background-color: whitesmoke;
+  transition: 0.5s;
+}
+
+.blog_card:hover {
+  scale: 1.1;
 }
 
 .blog_card figcaption {

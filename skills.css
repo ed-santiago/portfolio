@@ -29,6 +29,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.5s;
+}
+
+#skills figure:hover {
+  scale: 1.1;
 }
 
 #skills img {

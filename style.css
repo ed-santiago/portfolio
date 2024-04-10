@@ -123,7 +123,7 @@ nav button {
 }
 
 #tech_stack_container p {
-  margin-bottom: 4%;
+  margin-bottom: 3%;
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--NAVYBLUE);
@@ -141,7 +141,7 @@ nav button {
 }
 
 #tech_stack figure img {
-  width: 100%;
+  width: 60px;
   padding: 10%;
   border-radius: 50%;
   background-color: var(--WHITE);
@@ -199,7 +199,7 @@ nav button {
 
   #home h1 {
     margin: 5% 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
     text-align: center;
   }
