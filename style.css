@@ -83,7 +83,7 @@ nav button {
 /* HOME SECTION */
 
 #home {
-  padding: 8%;
+  padding: 10% 25%;
   background-color: var(--LIGHTBLUE);
   color: var(--NAVYBLUE);
 }
@@ -91,36 +91,27 @@ nav button {
 #home h1 {
   font-size: 3rem;
   font-weight: 900;
-  text-align: center;
-  padding-bottom: 1%;
+  margin-bottom: 4%;
 }
 
-#home h2 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-align: center;
-  padding-bottom: 5%;
+#home_container {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
 }
 
 #intro_container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20%;
-  gap: 3%;
-}
-
-#intro {
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 50%;
   text-align: justify;
+  gap: 10%;
 }
 
-#intro > * {
-  padding: 2% 0;
-}
-
-#intro p:first-child {
+#intro p {
   color: black;
+  margin-bottom: 4%;
 }
 
 #intro_buttons {
@@ -131,8 +122,8 @@ nav button {
   margin-right: 3%;
 }
 
-#tech_stack_p {
-  margin-top: 4%;
+#tech_stack_container p {
+  margin-bottom: 4%;
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--NAVYBLUE);
@@ -140,7 +131,7 @@ nav button {
 
 #tech_stack {
   display: flex;
-  gap: 3%;
+  gap: 5%;
 }
 
 #tech_stack figure {
@@ -150,16 +141,15 @@ nav button {
 }
 
 #tech_stack figure img {
-  width: 70%;
+  width: 100%;
   padding: 10%;
   border-radius: 50%;
   background-color: var(--WHITE);
 }
 
 #tech_stack figure figcaption {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 10%;
-  text-align: center;
 }
 
 #photo_of_me {
@@ -204,49 +194,46 @@ nav button {
   /* HOME SECTION */
 
   #home {
-    padding: 20% 10%;
-  }
-
-  #home > * {
-    padding-bottom: 4%;
+    padding: 18% 10%;
   }
 
   #home h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
+    margin: 5% 0;
+    font-size: 1.5rem;
+    font-weight: 900;
     text-align: center;
-    text-wrap: nowrap;
-  }
-  
-  #home h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    text-wrap: nowrap;
   }
 
-  #intro_container {
+  #home_container {
     flex-direction: column-reverse;
   }
 
-  #intro {
+  #intro_container {
     width: 100%;
     text-align: justify;
-    padding: 5% 0;
+    margin: 5% 0;
   }
 
-  #tech_stack figure {
-    padding: 2px 6px;
-    border-radius: 8px;
+  #tech_stack_container {
+    margin-top: 10%;
+    overflow-x: auto;
   }
-  
+
   #tech_stack figure img {
     width: 50px;
   }
 
+  #tech_stack figure figcaption {
+    font-size: 0.8rem;
+  }
+
   #photo_of_me {
-    width: 75%;
+    width: 100%;
     justify-content: center;
     align-items: center;
+  }
+
+  #photo_of_me img {
+    width: 100%;
   }
 }

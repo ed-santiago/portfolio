@@ -100,28 +100,28 @@
     width: 100%;
   }
 
-  #skills {
+  #skills_container {
     flex-direction: column;
   }
 
-  #skills_container {
+  #skills {
     width: 100%;
   }
 
-  #skills dl {
+  #skills_container dl {
     width: 100%;
   }
 
-  #skills_container {
+  #skills {
     grid-template-columns: 30% 30% 30%;
     margin-bottom: 7.5%;
   }
 
-  #skills_container img {
+  #skills img {
     width: 65px;
   }
 
-  #skills_container figcaption {
+  #skills figcaption {
     font-size: 0.9rem;
     margin-top: 15px;
   }
