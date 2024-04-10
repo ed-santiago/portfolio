@@ -1,9 +1,9 @@
-#about_container {
+#about_section {
   padding: 8% 20%;
   background-color: var(--LIGHTBLUE);
 }
 
-#about_container h2 {
+#about_section h2 {
   font-size: 2.5rem;
   font-weight: 900;
   color: var(--NAVYBLUE);
@@ -65,11 +65,11 @@
 }
 
 @media screen and (max-width: 640px) {
-  #about_container {
+  #about_section {
     padding: 8% 10%;
   }
 
-  #about_container h2 {
+  #about_section h2 {
     width: 100%;
   }
 

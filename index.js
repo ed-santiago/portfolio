@@ -16,11 +16,11 @@ hamburgerIcon.addEventListener("click", () => {
 })
 
 //SKILLS SECTION
-const descriptionNodeList = document.querySelectorAll("#skills dl");
+const descriptionNodeList = document.querySelectorAll("#skills_container dl");
 descriptionNodeList[2].style.display = "block";
 const descriptions = Array.from(descriptionNodeList);
 
-const skillsNodeList = document.querySelectorAll("#skills_container img");
+const skillsNodeList = document.querySelectorAll("#skills img");
 const skills = Array.from(skillsNodeList);
 skills.forEach((skill, index) => {
   skill.addEventListener("click", () => {

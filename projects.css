@@ -1,10 +1,10 @@
 /* PROJECTS */
 
-#projects {
+#projects_section {
   padding: 8% 20%;
 }
 
-#projects h2 {
+#projects_section h2 {
   font-size: 2.5rem;
   font-weight: 900;
   color: var(--NAVYBLUE);
@@ -12,27 +12,28 @@
   border-bottom: 4px solid var(--NAVYBLUE);
 }
 
-#project1, #project2, #project3 {
+.projects {
   display: flex;
   justify-content: center;
   margin: 4% 0;
+  gap: 4%;
 }
 
-#projects article {
+.projects article {
   width: 50%;
   text-align: justify;
 }
 
-#projects article > * {
+.projects article > * {
   padding: 2% 0;
 }
 
-#projects article h3 {
+.projects article h3 {
   color: var(--NAVYBLUE);
   font-size: 1.5rem;
 }
 
-#projects button {
+.projects button {
   background-color: var(--WHITE);
   font-family: inherit;
   font-weight: 500;
@@ -45,12 +46,12 @@
   transition: 0.5s;
 }
 
-#projects button:hover {
+.projects button:hover {
   background-color: var(--NAVYBLUE);
   color: var(--WHITE);
 }
 
-#projects figure {
+.projects figure {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -58,35 +59,35 @@
   padding: 1% 0 1% 0;
 }
 
-#projects figure video {
-  width: 75%;
+.projects figure video {
+  width: 80%;
   border-radius: 25px;
 }
 
 @media screen and (max-width: 640px) {
-  #projects {
+  #projects_section {
     padding: 8% 10%;
   }
 
-  #projects h2 {
+  #projects_section h2 {
     width: 100%;
   }
 
-  #project1, #project2, #project3 {
+  .projects {
     flex-direction: column;
     margin-bottom: 8%;
   }
 
-  #projects article {
+  .projects article {
     width: 100%;
   }
 
-  #projects figure {
+  .projects figure {
     width: 100%;
     margin: 5% 0;
   }
 
-  #projects figure video {
+  .projects figure video {
     width: 100%;
   }
 }
