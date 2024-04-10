@@ -28,8 +28,6 @@
 }
 
 .blog_card figcaption {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 3%;
 }
 
@@ -37,4 +35,28 @@
   width: 100%;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  #blogs_section {
+    padding: 8% 10%;
+  }
+
+  #blogs_section h2 {
+    width: 100%;
+  }
+
+  .blog_card {
+    width: 45%;
+  }
+
+  #blogs_container {
+    column-gap: 6%;
+    row-gap: 3vh;
+  }
+
+  .blog_card figcaption {
+    font-size: 0.8rem;
+    margin-bottom: 2%;
+  }
 }

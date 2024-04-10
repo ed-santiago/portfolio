@@ -86,7 +86,7 @@ input {
   right: 25%;
   background-color: dodgerblue;
   padding: 0.5% 1%;
-  /* display: none; */
+  display: none;
   animation: fade-up 0.5s;
 }
 
