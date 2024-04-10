@@ -50,8 +50,7 @@ function submitForm(e) {
       'Accept': 'application/json'
     },
     body: JSON.stringify({
-      firstName: `${e.target["firstName"].value}`,
-      lastName: `${e.target["lastName"].value}`,
+      name: `${e.target["firstName"].value}`,
       email: `${e.target["email"].value}`,
       phoneNumber: `${e.target["phone"].value}`,
     })
@@ -66,10 +65,3 @@ function submitForm(e) {
 
 const closeSuccessMessage = document.querySelector("#close_button");
 closeSuccessMessage.addEventListener("click", () => successMessage.style.display = "none");
-
-/* {
-  firstName: `${e.target["firstName"].value}`,
-  lastName: `${e.target["lastName"].value}`,
-  email: `${e.target["email"].value}`,
-  phoneNumber: `${e.target["phone"].value}`,
-} */

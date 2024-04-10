@@ -10,33 +10,29 @@
   text-align: center;
 }
 
-h3 {
-  font-size: 1.5rem;
-}
-
 #form_container {
   display: flex;
+  justify-content: center;
+  
 }
 
-#form_container > * {
-  padding: 0 4%;
-}
-
-#form_container form {
+form {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  border-right: 2px solid white;
+  width: 60%;
 }
 
-#form_container form h3 {
-  margin-bottom: 5%;
+form p {
+  margin: 2% 0 3%;
+}
+
+form p a {
+  color: var(--WHITE);
 }
 
 input, textarea {
   padding: 10px;
-  width: 100%;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   font-size: 1rem;
 }
 
@@ -44,36 +40,22 @@ textarea {
   resize: none;
 }
 
-#form_container form button {
+form button {
   align-self: center;
   width: 50%;
+  font-size: 1.2rem;
   font-family: inherit;
-  padding: 2%;
+  padding: 3% 0;
   background-color: var(--WHITE);
   border: 2px solid var(--NAVYBLUE);
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--NAVYBLUE);
   cursor: pointer;
 }
 
-#contact_alternative {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 50%;
-}
-
-#contact_alternative a {
-  color: inherit;
-}
-
-#contact_alternative h3 {
-  text-align: end;
-}
-
-#plane {
-  font-size: 12rem;
+form button:hover {
+  scale: 1.1;
 }
 
 #alert {
@@ -128,17 +110,12 @@ textarea {
     width: 100%;
   }
 
-  #form_container {
-    flex-direction: column;
-  }
-
-  #form_container form {
+  form {
     width: 100%;
     border-right: 0;
-    border-bottom: 2px solid white;
   }
 
-  #contact_alternative {
-    width: 100%;
+  input, textarea {
+    margin-bottom: 4%;
   }
 }
