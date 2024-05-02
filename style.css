@@ -114,7 +114,6 @@ nav button > * {
   font-weight: 900;
   padding: 2vw 2vw 0;
   animation: fade-down 0.5s;
-  background-color: var(--WHITE);
 }
 
 #home_container {
@@ -122,7 +121,6 @@ nav button > * {
   justify-content: center;
   padding: 2vw;
   animation: fade-down 0.5s;
-  background-color: var(--WHITE);
 }
 
 #intro_container {
@@ -171,7 +169,7 @@ nav button > * {
   width: 60px;
   padding: 10%;
   border-radius: 50%;
-  background-color: var(--LIGHTBLUE);
+  background-color: var(--WHITE);
 }
 
 #tech_stack figure figcaption {
@@ -225,7 +223,7 @@ nav button > * {
   }
 
   #home_section h1 {
-    padding: 2vh 2vh 0;
+    padding: 2vh;
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
@@ -233,7 +231,7 @@ nav button > * {
 
   #home_container {
     flex-direction: column-reverse;
-    padding: 2vh;
+    padding: 0;
   }
 
   #intro_container {

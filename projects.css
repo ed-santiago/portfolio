@@ -33,9 +33,23 @@
   font-size: 1.5rem;
 }
 
+.built_with {
+  display: flex;
+  gap: 1vh;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--NAVYBLUE);
+}
+
+.builtWithIcons img {
+  width: 32px;
+}
+
 .projects button {
   background-color: var(--WHITE);
   font-family: inherit;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-right: 1%;
   padding: 2%;
