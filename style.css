@@ -141,6 +141,7 @@ nav button > * {
 
 #intro_buttons {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 #intro_buttons > * {
@@ -220,11 +221,11 @@ nav button > * {
   /* HOME SECTION */
 
   #home_section {
-    padding: 15% 10% 12%;
+    padding: 15% 6% 12%;
   }
 
   #home_section h1 {
-    margin: 5% 0;
+    padding: 2vh 2vh 0;
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
@@ -232,12 +233,13 @@ nav button > * {
 
   #home_container {
     flex-direction: column-reverse;
+    padding: 2vh;
   }
 
   #intro_container {
     width: 100%;
     text-align: justify;
-    margin: 5% 0;
+    margin: 8% 0 5%;
   }
 
   #tech_stack_container {
@@ -260,7 +262,7 @@ nav button > * {
   }
 
   #photo_of_me img {
-    width: 100%;
+    width: 90%;
   }
 }
 
