@@ -52,7 +52,7 @@ skills.forEach((skill, index) => {
 })
 
 //CONTACT FORM SUBMISSION
-const contactForm = document.querySelector("#form_container form");
+const contactForm = document.querySelector("#contact_container form");
 contactForm.addEventListener("submit", submitForm);
 const successMessage = document.querySelector("#alert");
 

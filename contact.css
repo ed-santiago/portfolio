@@ -8,32 +8,74 @@
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
+  margin-bottom: 2vw;
 }
 
-#form_container {
+#contact_container {
   display: flex;
   justify-content: center;
-  
+  gap: 2vw;
+}
+
+#contact_container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2vh;
+}
+
+#contact {
+  width: 50%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+#contact p {
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: var(--WHITE);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#contact h4 {
+  margin-top: 5vh;
+}
+
+/* #message_icon {
+  font-size: 12rem;
+  margin: 0 auto;
+} */
+
+#profiles {
+  display: flex;
+  align-items: end;
+  gap: 1vw;
+}
+
+#profiles .fa-brands {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#profiles .fa-brands:hover {
+  color: var(--LIGHTBLUE);
+  scale: 1.02;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 60%;
-}
-
-form p {
-  margin: 2% 0 3%;
-}
-
-form p a {
-  color: var(--WHITE);
+  width: 50%;
 }
 
 input, textarea {
   padding: 10px;
   margin-bottom: 2%;
   font-size: 1rem;
+  border-radius: 16px;
+  border: none;
 }
 
 textarea {
@@ -48,14 +90,17 @@ form button {
   padding: 3% 0;
   background-color: var(--WHITE);
   border: 2px solid var(--NAVYBLUE);
-  border-radius: 8px;
+  border-radius: 16px;
   font-weight: 600;
   color: var(--NAVYBLUE);
   cursor: pointer;
-  transition: 0.5s;
 }
 
-form button:hover {
+form button p {
+  transition: 0.3s;
+}
+
+form button:hover p {
   scale: 1.1;
 }
 
@@ -97,11 +142,37 @@ form button:hover {
 
   #contact_section h2 {
     width: 100%;
+    margin-bottom: 2vh;
   }
+
+  #contact_container {
+    flex-direction: column;
+    gap: 6vh;
+  }
+
+  #contact {
+    width: 100%;
+  }
+
+  #contact h4 {
+    margin-top: 2vh;
+    font-size: 1.4rem;
+  }
+
+  #contact a {
+    font-size: 1.1rem;
+  }
+
+  #profiles {
+    gap: 2vh;
+  }
+
+  /* #message_icon {
+    display: none;
+  } */
 
   form {
     width: 100%;
-    border-right: 0;
   }
 
   input, textarea {
