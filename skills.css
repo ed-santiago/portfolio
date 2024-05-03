@@ -11,18 +11,14 @@
 }
 
 #skills_container {
-  display: flex;
-  margin: 6% 0;
-  gap: 5%;
+  padding: 2vw 3vw;
 }
 
 #skills {
-  width: 50%;
-  display: grid;
-  grid-template-columns: 30% 30%;
-  gap: 5%;
-  justify-content: center;
-  place-items: center;
+  display: flex;
+  padding: 1vw;
+  justify-content: space-between;
+  margin-bottom: 2vh;
 }
 
 #skills figure {
@@ -41,10 +37,6 @@
   transition: 0.4s;
 }
 
-/* #skills img:active {
-  box-shadow: 0 2px 0 var(--NAVYBLUE), 0 2px 4px black;
-} */
-
 #javascript img {
   background-color: var(--WHITE);
   box-shadow: 0 1px 2px var(--NAVYBLUE), 0 2px 5px black;
@@ -58,7 +50,6 @@
 #skills_container dl {
   display: none;
   padding: 2%;
-  width: 50%;
   min-height: 45vh;
   max-height: 45vh;
   overflow-y: auto;
@@ -82,7 +73,7 @@
 
 @media screen and (max-width: 640px) {
   #skills_section {
-    padding: 15% 6% 10%;
+    padding: 13% 6% 13%;
   }
 
   #skills_section h2 {
@@ -90,28 +81,19 @@
   }
 
   #skills_container {
-    flex-direction: column;
+    padding: 2vh 0;
   }
 
   #skills {
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 1vh;
   }
 
-  #skills_container dl {
-    width: 100%;
-  }
-
-  #skills {
-    grid-template-columns: 30% 30% 30%;
-    margin-bottom: 7.5%;
-  }
-
-  #skills img {
-    width: 65px;
+  #skills figure {
+    width: 28%;
   }
 
   #skills figcaption {
-    font-size: 0.9rem;
-    margin-top: 15px;
+    text-wrap: nowrap;
   }
 }
