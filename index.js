@@ -21,7 +21,7 @@ liArray.forEach(li => {
     nav.style.display = "none";
     overlay.classList.remove("overlay");
     hamburgerIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-})
+  })
 })
 
 //SKILLS SECTION
@@ -76,12 +76,21 @@ function submitForm(e) {
   })
     .then(response => response.json())
     .then((data) => {
-      console.log(data)
-      alertMessage("Success!", "will get back to you shortly")
-      setTimeout(() => successMessage.style.display = "none", 6000);
-      contactForm.reset();
+      if (data.success === "false") {
+        errorAlert();
+        setTimeout(() => successMessage.style.display = "none", 8000);
+        contactForm.reset();
+      } else {
+        alertMessage("Success!", "Thank you for reaching out! I'll get back to you ASAP.")
+        setTimeout(() => successMessage.style.display = "none", 8000);
+        contactForm.reset();
+      }
     })
-    .catch(error => console.log(error));
+    .catch(() => {
+      errorAlert();
+      setTimeout(() => successMessage.style.display = "none", 8000);
+      contactForm.reset();
+    });
 }
 
 const closeSuccessMessage = document.querySelector("#close_button");
@@ -98,4 +107,12 @@ function alertMessage(info, message) {
     alertDiv.style.backgroundColor = "var(--LIGHTBLUE)";
     alertDiv.style.color = "var(--NAVYBLUE)";
   }
+}
+
+function errorAlert() {
+  titleInfo.textContent = "Error!";
+  messageEl.innerHTML = "Unable to send your message, please try again. Or, just send me an email.";
+
+  alertDiv.style.backgroundColor = "#DC0000";
+  alertDiv.style.color = "var(--WHITE)";
 }
