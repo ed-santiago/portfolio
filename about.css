@@ -38,10 +38,25 @@
 }
 
 #about article h3 {
-  margin-top: 5%;
   font-size: 1.4rem;
   color: var(--NAVYBLUE);
   text-align: center;
+}
+
+#education {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+  margin-top: 1vw;
+}
+
+#education span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+#download {
+  margin-top: auto;
 }
 
 #about article button {
@@ -53,7 +68,8 @@
   background-color: var(--WHITE);
   border: 2px solid var(--NAVYBLUE);
   border-radius: 8px;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--NAVYBLUE);
   cursor: pointer;
   transition: 0.5s;
@@ -77,16 +93,24 @@
     flex-direction: column;
   }
 
-  #about > * {
-    margin: 6% 0;
-  }
-
   #about figure {
     width: 100%;
+    margin-bottom: 10%;
   }
 
   #about article {
     width: 100%;
+  }
+
+  #education {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2vh;
+    gap: 0;
+  }
+
+  #download {
+    margin-top: 2vh;
   }
 
   #about article button {
