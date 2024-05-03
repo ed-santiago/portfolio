@@ -75,7 +75,8 @@ function submitForm(e) {
     })
   })
     .then(response => response.json())
-    .then(() => {
+    .then((data) => {
+      console.log(data)
       alertMessage("Success!", "will get back to you shortly")
       setTimeout(() => successMessage.style.display = "none", 6000);
       contactForm.reset();
