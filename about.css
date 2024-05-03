@@ -17,14 +17,14 @@
 }
 
 #about figure {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #about figure img {
-  width: 70%;
+  width: 75%;
   border-radius: 32px;
   box-shadow: -25px 25px var(--NAVYBLUE);
 }
@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
   text-align: justify;
 }
 
@@ -55,15 +55,10 @@
   color: gray;
 }
 
-#download {
-  margin-top: auto;
-}
-
 #about article button {
   width: 100%;
   font-family: inherit;
-  margin-top: 2%;
-  margin-right: 1%;
+  margin-top: 3vw;
   padding: 2%;
   background-color: var(--WHITE);
   border: 2px solid var(--NAVYBLUE);
@@ -109,8 +104,8 @@
     gap: 0;
   }
 
-  #download {
-    margin-top: 2vh;
+  #about article button {
+    margin-top: 3vh;
   }
 
   #about article button {
