@@ -1,5 +1,4 @@
 //HEADER NAVBAR
-
 const hamburgerIcon = document.querySelector("nav button");
 const nav = document.querySelector("nav ul");
 const overlay = document.querySelector("#overlay");
@@ -53,11 +52,16 @@ skills.forEach((skill, index) => {
 
 //CONTACT FORM SUBMISSION
 const contactForm = document.querySelector("#contact_container form");
-contactForm.addEventListener("submit", submitForm);
+contactForm.addEventListener("submit", (e) => submitForm(e));
 const successMessage = document.querySelector("#alert");
+const loader = `<div id="loader"></div>`;
+const mediaQuery = window.matchMedia("(max-width: 640px)");
+const alertDiv = document.querySelector("#alert");
 
 function submitForm(e) {
   e.preventDefault();
+  successMessage.style.display = "block";
+  alertMessage("Sending message...", loader);
   fetch("https://formsubmit.co/ajax/edmond.santiago7@gmail.com", {
     method: "POST",
     headers: {
@@ -72,7 +76,8 @@ function submitForm(e) {
   })
     .then(response => response.json())
     .then(() => {
-      successMessage.style.display = "block";
+      alertMessage("Success!", "will get back to you shortly")
+      setTimeout(() => successMessage.style.display = "none", 6000);
       contactForm.reset();
     })
     .catch(error => console.log(error));
@@ -80,3 +85,16 @@ function submitForm(e) {
 
 const closeSuccessMessage = document.querySelector("#close_button");
 closeSuccessMessage.addEventListener("click", () => successMessage.style.display = "none");
+
+const titleInfo = document.querySelector("#title_info");
+const messageEl = document.querySelector("#alert_message");
+
+function alertMessage(info, message) {
+  titleInfo.textContent = info;
+  messageEl.innerHTML = message;
+
+  if (mediaQuery.matches) {
+    alertDiv.style.backgroundColor = "var(--LIGHTBLUE)";
+    alertDiv.style.color = "var(--NAVYBLUE)";
+  }
+}

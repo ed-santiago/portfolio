@@ -1,5 +1,5 @@
 #contact_section {
-  padding: 4% 18%;
+  padding: 4% 22%;
   background-color: var(--NAVYBLUE);
   color: var(--WHITE);
 }
@@ -70,7 +70,8 @@ form {
   width: 50%;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
   margin-bottom: 2%;
   font-size: 1rem;
@@ -110,29 +111,55 @@ form button:hover p {
   top: 5rem;
   left: 25%;
   right: 25%;
-  background-color: dodgerblue;
+  background-color: var(--NAVYBLUE);
+  color: var(--WHITE);
   padding: 0.5% 1%;
   display: none;
   animation: fade-up 0.5s;
 }
 
-#success {
+#title {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1%;
+  margin-bottom: 1vw;
   font-size: 2.5rem;
   font-weight: 600;
 }
 
-#success_message {
-  background-color: var(--WHITE);
-  color: black;
+#alert_message {
   padding: 1%;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 #close_button:hover {
   scale: 1.1;
   cursor: pointer;
+}
+
+#loader {
+  display: flex;
+  justify-content: center;
+}
+
+#loader::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 15px solid var(--WHITE);
+  border-top-color: lightblue;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn)
+  }
+
+  to {
+    transform: rotate(1turn)
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -175,7 +202,22 @@ form button:hover p {
     width: 100%;
   }
 
-  input, textarea {
+  input,
+  textarea {
     margin-bottom: 4%;
+  }
+
+  #alert {
+    left: 5%;
+    right: 5%;
+    padding: 1vh;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  #alert_message {
+    font-size: 1.5rem;
   }
 }
