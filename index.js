@@ -34,10 +34,15 @@ const skillsNodeList = document.querySelectorAll("#skills img");
 const skills = Array.from(skillsNodeList);
 skills.forEach((skill, index) => {
   skill.addEventListener("click", () => {
+    console.log(skill)
     skill.style.backgroundColor = "var(--WHITE)";
+    skill.style.boxShadow = "0 1px 2px var(--NAVYBLUE), 0 2px 5px black";
 
     const filterSkills = skills.filter(element => element !== skill);
-    filterSkills.forEach(skill => skill.style.backgroundColor = "var(--LIGHTBLUE)");
+    filterSkills.forEach(skill => {
+      skill.style.backgroundColor = "var(--LIGHTBLUE)";
+      skill.style.boxShadow = "0 4px 0 var(--NAVYBLUE), 0 4px 8px black";
+    });
 
     const findDescription = descriptions.find((element, index2) => index === index2);
     findDescription.style.display = "block";

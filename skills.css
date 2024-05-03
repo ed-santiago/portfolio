@@ -29,11 +29,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.5s;
-}
-
-#skills figure:hover {
-  scale: 1.1;
 }
 
 #skills img {
@@ -41,17 +36,18 @@
   padding: 10%;
   border-radius: 50%;
   width: 90%;
-  box-shadow: 0 6px 0 var(--NAVYBLUE), 0 4px 8px black;
+  box-shadow: 0 4px 0 var(--NAVYBLUE), 0 4px 8px black;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
-#skills img:active {
+/* #skills img:active {
   box-shadow: 0 2px 0 var(--NAVYBLUE), 0 2px 4px black;
-}
+} */
 
 #javascript img {
   background-color: var(--WHITE);
+  box-shadow: 0 1px 2px var(--NAVYBLUE), 0 2px 5px black;
 }
 
 #skills figcaption {
