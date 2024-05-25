@@ -5,7 +5,7 @@ My Personal Website
 Access my site at ed-santiago.github.io/portfolio/
 
 ## About the website
-My personal website contains sections such as landing page, my portfolio, about me, skills and a contact section. The purpose of the website is to showcase projects I've made, my skillset and a little bit about me.
+My personal website contains sections such as landing page, my portfolio, about me, skills and a contact section. The purpose of the website is to showcase projects I've made, my skillset and a little bit of information about me.
 
 ### Landing Page
 The landing page contains a short introduction about me, some links to view my other profiles and my tech stack.
