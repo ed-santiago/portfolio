@@ -137,6 +137,11 @@ nav button > * {
   margin-bottom: 4%;
 }
 
+#intro span {
+  font-weight: bold;
+  color: var(--NAVYBLUE);
+}
+
 #intro_buttons {
   font-size: 2rem;
   cursor: pointer;
