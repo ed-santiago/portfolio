@@ -33,7 +33,6 @@ const skillsNodeList = document.querySelectorAll("#skills img");
 const skills = Array.from(skillsNodeList);
 skills.forEach((skill, index) => {
   skill.addEventListener("click", () => {
-    console.log(skill)
     skill.style.backgroundColor = "var(--WHITE)";
     skill.style.boxShadow = "0 1px 2px var(--NAVYBLUE), 0 2px 5px black";
 
@@ -47,6 +46,10 @@ skills.forEach((skill, index) => {
     findDescription.style.display = "block";
     const filterDescription = descriptions.filter(element => element !== findDescription);
     filterDescription.map(element => element.style.display = "none");
+  })
+  skill.addEventListener("mousedown", () => {
+    skill.style.backgroundColor = "var(--WHITE)";
+    skill.style.boxShadow = "0 1px 2px var(--NAVYBLUE), 0 2px 5px black";
   })
 })
 

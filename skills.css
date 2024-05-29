@@ -10,15 +10,19 @@
   border-bottom: 4px solid var(--NAVYBLUE);
 }
 
+#skills_section h2 span {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
 #skills_container {
-  padding: 2vw 3vw;
+  padding: 1.5vw 0;
 }
 
 #skills {
   display: flex;
   padding: 1vw;
   justify-content: space-between;
-  margin-bottom: 2vh;
 }
 
 #skills figure {

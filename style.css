@@ -140,6 +140,7 @@ nav button > * {
 #intro p {
   color: black;
   margin-bottom: 4%;
+  font-size: 1.1rem;
 }
 
 #intro_buttons {
