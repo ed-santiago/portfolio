@@ -154,9 +154,6 @@ nav button > * {
 
 #intro_buttons a {
   text-decoration: none;
-}
-
-#intro_buttons a:visited {
   color: var(--NAVYBLUE);
 }
 
