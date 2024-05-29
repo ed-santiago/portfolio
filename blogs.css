@@ -45,6 +45,11 @@
   cursor: pointer;
 }
 
+.view_blog a {
+  text-decoration: none;
+  color: var(--NAVYBLUE);
+}
+
 .blog_card figure img {
   width: 100%;
   box-shadow: 0 1px 4px 0 black;
