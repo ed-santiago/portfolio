@@ -20,11 +20,11 @@
   width: 40%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 #about figure img {
-  width: 75%;
+  width: 80%;
   border-radius: 32px;
   box-shadow: -25px 25px var(--NAVYBLUE);
 }
