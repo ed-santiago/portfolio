@@ -1,6 +1,5 @@
 #blogs_section {
-  padding: 8% 20%;
-  background-color: var(--LIGHTBLUE);
+  padding: 8% 16%;
 }
 
 #blogs_section h2 {
@@ -24,7 +23,7 @@
   width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 1.5%;
-  background-color: var(--WHITE);
+  background-color: var(--LIGHTBLUE);
   transition: 0.5s;
 }
 

@@ -1,5 +1,5 @@
 #about_section {
-  padding: 8% 20%;
+  padding: 8% 16%;
   background-color: var(--LIGHTBLUE);
 }
 
@@ -43,11 +43,15 @@
   text-align: center;
 }
 
+#about article p {
+  font-size: 1.1rem;
+}
+
 #education {
   display: flex;
   align-items: center;
   gap: 1vh;
-  margin-top: 1vw;
+  margin-top: 2vw;
 }
 
 #education span {
@@ -58,7 +62,7 @@
 #about article button {
   width: 100%;
   font-family: inherit;
-  margin-top: 3vw;
+  margin-top: 2vw;
   padding: 2%;
   background-color: var(--WHITE);
   border: 2px solid var(--NAVYBLUE);
