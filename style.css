@@ -252,6 +252,10 @@ nav button > * {
     overflow-x: auto;
   }
 
+  #intro p {
+    font-size: 1.25rem;
+  }
+
   #tech_stack figure img {
     width: 50px;
   }

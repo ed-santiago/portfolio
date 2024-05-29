@@ -69,6 +69,10 @@
     row-gap: 3vh;
   }
 
+  .view_blog {
+    font-size: 1.3rem;
+  }
+
   .blog_card figcaption {
     font-size: 1.2rem;
     margin-bottom: 2%;

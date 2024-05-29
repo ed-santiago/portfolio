@@ -24,7 +24,7 @@
 }
 
 #about figure img {
-  width: 80%;
+  width: 75%;
   border-radius: 32px;
   box-shadow: -25px 25px var(--NAVYBLUE);
 }
@@ -55,7 +55,6 @@
 }
 
 #education span {
-  font-size: 0.9rem;
   color: gray;
 }
 
@@ -99,6 +98,10 @@
 
   #about article {
     width: 100%;
+  }
+
+  #about article p {
+    font-size: 1.25rem;
   }
 
   #education {

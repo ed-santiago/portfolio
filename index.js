@@ -25,7 +25,7 @@ liArray.forEach(li => {
 })
 
 //SKILLS SECTION
-const descriptionNodeList = document.querySelectorAll("#skills_container dl");
+/* const descriptionNodeList = document.querySelectorAll("#skills_container dl");
 descriptionNodeList[2].style.display = "block";
 const descriptions = Array.from(descriptionNodeList);
 
@@ -51,7 +51,7 @@ skills.forEach((skill, index) => {
     skill.style.backgroundColor = "var(--WHITE)";
     skill.style.boxShadow = "0 1px 2px var(--NAVYBLUE), 0 2px 5px black";
   })
-})
+}) */
 
 //CONTACT FORM SUBMISSION
 const contactForm = document.querySelector("#contact_container form");
