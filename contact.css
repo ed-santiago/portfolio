@@ -56,11 +56,6 @@
   cursor: pointer;
 }
 
-#profiles .fa-brands:hover {
-  color: var(--LIGHTBLUE);
-  scale: 1.02;
-}
-
 form {
   display: flex;
   flex-direction: column;
