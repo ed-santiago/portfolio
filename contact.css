@@ -76,6 +76,12 @@ textarea {
   border: none;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--NAVYBLUE);
+}
+
 textarea {
   resize: none;
 }

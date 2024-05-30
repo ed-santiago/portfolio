@@ -2,6 +2,7 @@
 const hamburgerIcon = document.querySelector("nav button");
 const nav = document.querySelector("nav ul");
 const overlay = document.querySelector("#overlay");
+const mediaQuery = window.matchMedia("(max-width: 640px)");
 hamburgerIcon.addEventListener("click", () => {
   if (nav.style.display === "block") {
     nav.style.display = "none";
@@ -17,11 +18,13 @@ hamburgerIcon.addEventListener("click", () => {
 const navLi = document.querySelectorAll("nav ul li");
 const liArray = Array.from(navLi);
 liArray.forEach(li => {
-  li.addEventListener("click", () => {
-    nav.style.display = "none";
-    overlay.classList.remove("overlay");
-    hamburgerIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-  })
+  if (mediaQuery.matches) {
+    li.addEventListener("click", () => {
+      nav.style.display = "none";
+      overlay.classList.remove("overlay");
+      hamburgerIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+    })
+  }
 })
 
 //SKILLS SECTION
@@ -58,7 +61,6 @@ const contactForm = document.querySelector("#contact_container form");
 contactForm.addEventListener("submit", (e) => submitForm(e));
 const successMessage = document.querySelector("#alert");
 const loader = `<div id="loader"></div>`;
-const mediaQuery = window.matchMedia("(max-width: 640px)");
 const alertDiv = document.querySelector("#alert");
 
 function submitForm(e) {
