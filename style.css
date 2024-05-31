@@ -211,7 +211,6 @@ nav button > * {
 
   nav ul {
     display: none;
-    flex-direction: column;
     width: 100%;
     text-align: center;
   }
@@ -219,8 +218,11 @@ nav button > * {
   nav ul li {
     width: 50%;
     margin: auto;
-    padding: 1.2rem;
-    border-bottom: 1px solid var(--NAVYBLUE);
+    padding: 2rem 0;
+  }
+
+  nav ul li:nth-child(4) {
+    padding-bottom: 57.5vh;
   }
 
   nav ul li a {
