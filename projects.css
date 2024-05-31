@@ -12,6 +12,11 @@
   border-bottom: 4px solid var(--NAVYBLUE);
 }
 
+#note {
+  font-size: 1.2rem;
+  margin-top: 4%;
+}
+
 .projects {
   display: flex;
   justify-content: center;
