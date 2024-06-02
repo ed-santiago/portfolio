@@ -60,6 +60,16 @@ article p {
 }
 
 .projects button {
+  
+}
+
+.projects button:hover {
+  background-color: var(--NAVYBLUE);
+  color: var(--WHITE);
+}
+
+.projects a {
+  text-decoration: none;
   background-color: var(--WHITE);
   font-family: inherit;
   font-size: 1.3rem;
@@ -73,14 +83,9 @@ article p {
   transition: 0.5s;
 }
 
-.projects button:hover {
-  background-color: var(--NAVYBLUE);
+.projects a:hover {
   color: var(--WHITE);
-}
-
-.projects button a {
-  text-decoration: none;
-  color: var(--NAVYBLUE);
+  background-color: var(--NAVYBLUE);
 }
 
 .projects figure {

@@ -109,7 +109,7 @@ nav button > * {
 /* HOME SECTION */
 
 #home_section {
-  padding: 6% 24%;
+  padding: 6% 20%;
   background-color: var(--LIGHTBLUE);
   color: var(--NAVYBLUE);
 }
@@ -219,10 +219,6 @@ nav button > * {
     width: 50%;
     margin: auto;
     padding: 2rem 0;
-  }
-
-  nav ul li:nth-child(4) {
-    padding-bottom: 57.5vh;
   }
 
   nav ul li a {
